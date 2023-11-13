@@ -13,5 +13,6 @@ UCLASS()
 class SBORISHE_PROJECT_API ASborishe_ProjectGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+
+		ASborishe_ProjectGameModeBase();
 };
