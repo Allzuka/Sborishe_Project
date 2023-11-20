@@ -17,6 +17,7 @@ ACameraPawn::ACameraPawn()
 	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>("SpringArmComponent");
 	SpringArmComponent->TargetArmLength = 700;
 	SpringArmComponent->SetupAttachment(SceneComponent);
+	SpringArmComponent->SetCollisionProfileName(FName(TEXT("NoCollision")));
 
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>("CameraComponent");
 	CameraComponent->SetupAttachment(SpringArmComponent);
