@@ -31,7 +31,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Camera)
 		USpringArmComponent* SpringArmComponent;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Camera, CollisionProfile)
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = Camera)
 		USceneComponent* SceneComponent;
 
 
