@@ -4,6 +4,7 @@
 #include "Core/Player/CameraPawn.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
+#include "Components/PrimitiveComponent.h"
 #include "Components/SceneComponent.h"
 
 // Sets default values
@@ -17,8 +18,6 @@ ACameraPawn::ACameraPawn()
 	SpringArmComponent = CreateDefaultSubobject<USpringArmComponent>("SpringArmComponent");
 	SpringArmComponent->TargetArmLength = 700;
 	SpringArmComponent->SetupAttachment(SceneComponent);
-	SpringArmComponent->SetCollisionProfileName(FName(TEXT("NoCollision")));
-
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>("CameraComponent");
 	CameraComponent->SetupAttachment(SpringArmComponent);
 
